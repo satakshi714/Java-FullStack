@@ -1,0 +1,16 @@
+package com.bookstore.bookservice;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+
+@SpringBootApplication
+@EnableDiscoveryClient
+public class BookServiceBookStoreApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BookServiceBookStoreApplication.class, args);
+		System.out.println("Book Service");
+	}
+
+}
